@@ -1,0 +1,36 @@
+.card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icon {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #222;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover h3,
+.card:hover p {
+  color: #ffffff;
+  text-shadow: 0 0 8px #000, 0 0 12px #fdffff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}

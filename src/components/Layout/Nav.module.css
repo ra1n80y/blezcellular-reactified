@@ -1,0 +1,30 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(to left, #3b4bdb, #1e2a70);
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.15);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.link:hover,
+.active {
+  color: #d1d1d5;
+  text-decoration: underline;
+}
