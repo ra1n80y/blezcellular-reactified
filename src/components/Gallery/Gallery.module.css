@@ -22,8 +22,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  border-radius: 6px;
 }
 
 .thumbnail {
@@ -32,10 +30,14 @@
   object-fit: cover;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .thumbnail:hover {
   transform: scale(1.05);
   box-shadow: 0 0 16px 4px rgba(255, 136, 0, 1);
+  position: relative;
+  z-index: 10;
 }

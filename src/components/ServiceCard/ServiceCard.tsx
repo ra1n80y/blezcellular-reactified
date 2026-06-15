@@ -1,4 +1,4 @@
-import styles from "./ServiceCard.module.css";
+import styles from './ServiceCard.module.css';
 
 interface ServiceCardProps {
   icon: string;

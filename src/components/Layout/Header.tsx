@@ -1,11 +1,11 @@
-import styles from "./Header.module.css";
+import { Container } from 'react-bootstrap';
 
-const Header = () => {
-  return (
-    <header className={styles.header}>
+const Header = () => (
+  <header className="header-custom text-white text-center py-3">
+    <Container>
       <h1>Blez Cellular</h1>
-    </header>
-  );
-};
+    </Container>
+  </header>
+);
 
 export default Header;

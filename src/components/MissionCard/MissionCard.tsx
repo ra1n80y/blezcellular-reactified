@@ -1,4 +1,4 @@
-import styles from "./MissionCard.module.css";
+import styles from './MissionCard.module.css';
 
 interface MissionCardProps {
   icon: string;

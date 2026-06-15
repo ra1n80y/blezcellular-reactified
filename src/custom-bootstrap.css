@@ -1,0 +1,103 @@
+/* =============================================
+   Blez Cellular – Bootstrap 5 Brand Overrides
+   ============================================= */
+
+/* ----- 1. Bootstrap CSS Variables (theme colours) ----- */
+:root {
+  --bs-primary: #f64e4e;
+  --bs-primary-rgb: 246, 78, 78;
+  --bs-secondary: #920909;
+  --bs-secondary-rgb: 146, 9, 9;
+  --bs-info: #3b4bdb;
+  --bs-info-rgb: 59, 75, 219;
+  --bs-body-bg: #515152;
+  --bs-body-color: #333;
+  --bs-font-sans-serif: 'GomaOctagon', system-ui, -apple-system, sans-serif;
+}
+
+/* ----- 2. Layout overrides ----- */
+/* Navbar gradient + shadow */
+.navbar-custom {
+  background: linear-gradient(to left, #3b4bdb, #1e2a70) !important;
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer background (uses our --bs-secondary) */
+footer {
+  background-color: var(--bs-secondary) !important;
+}
+
+/* Header gradient */
+.header-custom {
+  background: linear-gradient(to right, #f64e4e, #920909);
+}
+
+/* ----- 3. Section gradient backgrounds ----- */
+.bg-service-gradient {
+  background: linear-gradient(180deg, #ffffff, #626262);
+}
+
+.bg-gallery-gradient {
+  background: linear-gradient(180deg, #f94242, #920909);
+}
+
+.bg-location-gradient {
+  background: linear-gradient(180deg, #394dfd, #1b9413);
+}
+
+/* ----- 4. Cards (Services & Mission) ----- */
+.card.service-card,
+.card.mission-card {
+  background-color: #ffffff !important;
+  border: none;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.card.service-card .card-title,
+.card.mission-card .card-title {
+  color: #222 !important;
+}
+
+.card.service-card .card-text,
+.card.mission-card .card-text {
+  color: #555 !important;
+}
+
+/* --- Service cards (specific hover) --- */
+.card.service-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Glowing text on service card hover */
+.card.service-card:hover .card-title,
+.card.service-card:hover .card-text {
+  color: #ffffff !important;
+  text-shadow:
+    0 0 8px #000000,
+    0 0 12px #fdffff;
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+/* --- Mission cards (specific hover) --- */
+.card.mission-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}

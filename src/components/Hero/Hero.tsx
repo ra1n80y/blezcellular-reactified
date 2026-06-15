@@ -1,19 +1,20 @@
-import styles from "./Hero.module.css";
+import { Container } from 'react-bootstrap';
+import styles from './Hero.module.css';
 
 interface HeroProps {
   title: string;
   subtitle: string;
 }
 
-const Hero = ({ title, subtitle }: HeroProps) => {
-  return (
-    <section className={styles.hero}>
-      <div className={styles.overlay}>
+const Hero = ({ title, subtitle }: HeroProps) => (
+  <section className={styles.hero}>
+    <div className={styles.overlay}>
+      <Container>
         <h2>{title}</h2>
         <p>{subtitle}</p>
-      </div>
-    </section>
-  );
-};
+      </Container>
+    </div>
+  </section>
+);
 
 export default Hero;

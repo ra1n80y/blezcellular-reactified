@@ -1,43 +1,22 @@
-import { NavLink } from "react-router-dom";
-import styles from "./Nav.module.css";
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
-const Nav = () => {
-  return (
-    <nav className={styles.nav}>
-      <ul className={styles.navList}>
-        <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? `${styles.link} ${styles.active}` : styles.link
-            }
-          >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? `${styles.link} ${styles.active}` : styles.link
-            }
-          >
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? `${styles.link} ${styles.active}` : styles.link
-            }
-          >
-            Contacts
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
-  );
-};
+const AppNav = () => (
+  <Navbar expand="sm" variant="dark" sticky="top" className="navbar-custom">
+    <Container>
+      <Nav className="mx-auto">
+        <Nav.Link as={NavLink} to="/" end>
+          Home
+        </Nav.Link>
+        <Nav.Link as={NavLink} to="/about">
+          About
+        </Nav.Link>
+        <Nav.Link as={NavLink} to="/contact">
+          Contacts
+        </Nav.Link>
+      </Nav>
+    </Container>
+  </Navbar>
+);
 
-export default Nav;
+export default AppNav;

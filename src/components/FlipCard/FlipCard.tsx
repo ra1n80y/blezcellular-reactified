@@ -1,4 +1,4 @@
-import styles from "./FlipCard.module.css";
+import styles from './FlipCard.module.css';
 
 interface FlipCardProps {
   frontIcon: string;
@@ -7,12 +7,7 @@ interface FlipCardProps {
   backLink: string;
 }
 
-const FlipCard = ({
-  frontIcon,
-  frontAlt,
-  backText,
-  backLink,
-}: FlipCardProps) => {
+const FlipCard = ({ frontIcon, frontAlt, backText, backLink }: FlipCardProps) => {
   return (
     <div className={styles.flipCard}>
       <div className={styles.inner}>
