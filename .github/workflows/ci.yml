@@ -37,9 +37,4 @@ jobs:
 
       - name: Deploy to Vercel
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
+        run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
